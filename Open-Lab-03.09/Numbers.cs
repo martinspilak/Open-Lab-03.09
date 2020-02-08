@@ -6,7 +6,10 @@ namespace Open_Lab_03._09
     {
         public bool IsPrimeNumber(int num)
         {
-            throw new NotImplementedException();
+          if (num < 2) return false;
+          for (var i = 2; i < num; i++)
+                if (num % i == 0) return false;
+                return true;                             
         }
     }
 }
